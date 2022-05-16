@@ -1,0 +1,141 @@
+.bag_container {
+  margin: auto;
+  max-width: 1440px;
+}
+.font {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 400;
+}
+
+.cart_title {
+  color: #1d1f22;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  width: 84px;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.bag_list {
+  list-style: none;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.bag_list_item {
+  border-top: 1px black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_brand {
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.product_name {
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 300;
+
+  overflow-wrap: break-word;
+}
+
+.horizontal_line {
+  border-top: #e5e5e5;
+  height: 1px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.product_price {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.size_section {
+  margin-bottom: 20px;
+}
+
+.active_color_size {
+  border: 3px solid #1d1f22;
+  box-shadow: 0 1px 2px 1px #616469;
+}
+
+.active_button_size {
+  background: #1d1f22;
+  color: white;
+}
+
+.counters__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 12px;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.right_side {
+  display: flex;
+  height: 185px;
+  width: 198px;
+}
+
+.product_bag_image {
+  position: relative;
+}
+
+.bag_main_product_image {
+  height: 185px;
+  width: 141px;
+  object-fit: contain;
+}
+
+.bag_image_left_arrow,
+.bag_image_right_arrow {
+  position: absolute;
+  width: 36px;
+}
+
+.bag_image_left_arrow {
+  top: 40%;
+}
+
+.bag_image_right_arrow {
+  top: 40%;
+  right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bag_list_item {
+    flex-direction: column;
+  }
+
+  .bag_container {
+    margin: 10px;
+  }
+
+  .bag_list_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart_title {
+    text-align: center;
+    width: 100%;
+  }
+}
