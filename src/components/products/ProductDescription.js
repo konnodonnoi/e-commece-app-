@@ -53,10 +53,13 @@ class ProductDescription extends Component {
                     category
                     description
                     inStock
-                    prices{
-                      currency
-                      amount
-                    }
+                    prices {
+                currency {
+                label
+                symbol
+                }
+                amount
+              }
                     attributes{
                     name
                     items{

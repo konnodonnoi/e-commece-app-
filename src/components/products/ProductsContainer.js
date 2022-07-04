@@ -56,7 +56,10 @@ class ProductsContainer extends Component {
                 }
               }
               prices {
-                currency
+                currency {
+                label
+                symbol
+                }
                 amount
               }
             }
